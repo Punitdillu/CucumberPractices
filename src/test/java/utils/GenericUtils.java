@@ -34,7 +34,7 @@ public class GenericUtils  {
 	
 	public String returnDataFromPropertyFile(String key) throws Throwable {
 		
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\resorces\\global.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\global.properties");
 		Properties prop = new Properties();
 		prop.load(fis);
 		String data=prop.getProperty(key);

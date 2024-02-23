@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 
 	
-	
+	GenericUtils gu = new GenericUtils();
 	public  WebDriver driver = null;
 	
 	public WebDriver webdriverManager() throws Throwable {
@@ -22,8 +22,8 @@ public class BaseTest {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\global.properties");
 		Properties prop = new Properties();
 		prop.load(fis);
-		String browser=prop.getProperty("browser");
-		String url=prop.getProperty("url");
+		String browser=gu.returnDataFromPropertyFile("browser");
+		String url=gu.returnDataFromPropertyFile("url");
 
 		
 
