@@ -15,7 +15,7 @@ public class BaseTest {
 
 	
 	GenericUtils gu = new GenericUtils();
-	public  WebDriver driver = null;
+	  WebDriver driver = null;
 	
 	public WebDriver webdriverManager() throws Throwable {
 
