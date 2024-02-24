@@ -12,10 +12,10 @@ plugin= {"html:target/cucumber.html", "json:target/cucumber.json",
 		"rerun:target/failed_scenarios.txt"})
 public class TestRunner extends AbstractTestNGCucumberTests {
 
-	@Override
-	@DataProvider(parallel=true)
-	public Object[][] scenarios()
-	{
-		return super.scenarios();
-	}
+//	@Override
+//	@DataProvider(parallel=true)
+//	public Object[][] scenarios()
+//	{
+//		return super.scenarios();
+//	}
 }

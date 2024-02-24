@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-24T11:06:31 IST" name="Default suite" finished-at="2024-02-24T11:07:32 IST" duration-ms="61136">
+  <suite started-at="2024-02-24T18:19:38 IST" name="Default suite" finished-at="2024-02-24T18:20:46 IST" duration-ms="68034">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-02-24T11:06:31 IST" name="Default test" finished-at="2024-02-24T11:07:32 IST" duration-ms="61136">
+    <test started-at="2024-02-24T18:19:38 IST" name="Default test" finished-at="2024-02-24T18:20:46 IST" duration-ms="68034">
       <class name="cucumberOption.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-24T11:06:31 IST" name="setUpClass" finished-at="2024-02-24T11:06:32 IST" duration-ms="1636" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-24T18:19:38 IST" name="setUpClass" finished-at="2024-02-24T18:19:40 IST" duration-ms="2157" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3d5790ea]]>
+                <![CDATA[org.testng.TestRunner@1290c49]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-24T11:06:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-24T11:07:12 IST" duration-ms="39375" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search product In both Homepage"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search and place order for productonly"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-24T11:06:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-24T11:07:28 IST" duration-ms="55891" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-24T18:19:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-24T18:20:42 IST" duration-ms="61242" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,53 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Apple iPhone 12 (Blue, 128 GB)']"}
-  (Session info: chrome=121.0.6167.187)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5b3f905457185f8e75b36f283caea85c, findElement {value=//div[text()='Apple iPhone 12 (Blue, 128 GB)'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.187, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51343/devtoo..., se:cdpVersion: 121.0.6167.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b3f905457185f8e75b36f283caea85c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Apple iPhone 12 (Blue, 128 GB)']"}
-  (Session info: chrome=121.0.6167.187)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5b3f905457185f8e75b36f283caea85c, findElement {value=//div[text()='Apple iPhone 12 (Blue, 128 GB)'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.187, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51343/devtoo..., se:cdpVersion: 121.0.6167.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b3f905457185f8e75b36f283caea85c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at objectRepository.FlipcartHomePage.selectResult(FlipcartHomePage.java:24)
-at stepDefinition.FlipCartSearchPageStepDefinition.user_search_with_short_name_and_extract_actual_name_of_product(FlipCartSearchPageStepDefinition.java:33)
-at ✽.User search with shortName Apple iPhone 12 (Blue, 128 GB) and extract actual name of product(file:///C:/Users/Dell/eclipse-workspace/CucumberAutomationLearning/src/test/java/features/searchProduct.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-24T11:06:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-24T11:07:31 IST" duration-ms="58613" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-24T18:19:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-24T18:20:45 IST" duration-ms="64883" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -117,9 +58,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ae438ab02c513e537ad66e6990867f1, findElement {value=//div[text()='Apple iPhone'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.187, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51344}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51344/devtoo..., se:cdpVersion: 121.0.6167.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ae438ab02c513e537ad66e6990867f1]]>
+Command: [c7057efcb369ee2ca88b2f28d3e61f51, findElement {using=xpath, value=//div[text()='Apple iPhone']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.187, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 121.0.6167.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7057efcb369ee2ca88b2f28d3e61f51]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Apple iPhone']"}
@@ -128,9 +69,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ae438ab02c513e537ad66e6990867f1, findElement {value=//div[text()='Apple iPhone'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.187, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51344}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51344/devtoo..., se:cdpVersion: 121.0.6167.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ae438ab02c513e537ad66e6990867f1
+Command: [c7057efcb369ee2ca88b2f28d3e61f51, findElement {using=xpath, value=//div[text()='Apple iPhone']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.187, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 121.0.6167.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7057efcb369ee2ca88b2f28d3e61f51
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -155,7 +96,23 @@ at ✽.User search with shortName Apple iPhone and extract actual name of produc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-24T11:07:31 IST" name="tearDownClass" finished-at="2024-02-24T11:07:32 IST" duration-ms="775" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-24T18:19:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-24T18:20:33 IST" duration-ms="53038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search product In both Homepage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search and place order for productonly"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-24T18:20:45 IST" name="tearDownClass" finished-at="2024-02-24T18:20:46 IST" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
