@@ -10,7 +10,7 @@ And Validate product <Product> added in cart or Not
 Examples:
 | Product |
 | Apple iPhone 12 (Blue, 128 GB) |
-| Apple iPhone |
+| Apple iPhone 12 (Blue, 128 GB) |
 
 
 

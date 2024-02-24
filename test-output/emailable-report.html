@@ -9,81 +9,39 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">10,364</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">55,022</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">cucumberOption.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="3">1708792975034</td><td rowspan="3">7273</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">cucumberOption.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1708794183257</td><td rowspan="1">52072</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">cucumberOption.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="2">1708794183258</td><td rowspan="2">49022</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">cucumberOption.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search product In both Homepage and offerpage&quot;</td><td>&quot;Search and place order for product&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 122
-Current browser version is 121.0.6167.187 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe 
-Host info: host: &apos;PUNITRANJAN2105&apos;, ip: &apos;192.168.152.195&apos;
+<h2>Default test</h2><h3 id="m0">cucumberOption.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search product In both Homepage and offerpage&quot;</td><td>&quot;Search and place order for product&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Apple iPhone&apos;]&quot;}
+  (Session info: chrome=122.0.6261.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+Command: [b6df560f1a6794a3548ba70c9a8551f3, findElement {using=xpath, value=//div[text()=&apos;Apple iPhone&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51802}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51802/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6df560f1a6794a3548ba70c9a8551f3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
-	at utils.BaseTest.webdriverManager(BaseTest.java:36)
-	at stepDefinition.FlipCartSearchPageStepDefinition.UserisonFlipkartlandingpage(FlipCartSearchPageStepDefinition.java:23)
-	at ✽.User is on Flipkart landing page(file:///C:/Users/Dell/eclipse-workspace/CucumberAutomationLearning/src/test/java/features/searchProduct.feature:5)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at objectRepository.FlipcartHomePage.selectResult(FlipcartHomePage.java:24)
+	at stepDefinition.FlipCartSearchPageStepDefinition.user_search_with_short_name_and_extract_actual_name_of_product(FlipCartSearchPageStepDefinition.java:33)
+	at ✽.User search with shortName Apple iPhone and extract actual name of product(file:///C:/Users/Dell/eclipse-workspace/CucumberAutomationLearning/src/test/java/features/searchProduct.feature:6)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">cucumberOption.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search product In both Homepage&quot;</td><td>&quot;Search and place order for productonly&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 122
-Current browser version is 121.0.6167.187 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe 
-Host info: host: &apos;PUNITRANJAN2105&apos;, ip: &apos;192.168.152.195&apos;
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
-	at utils.BaseTest.webdriverManager(BaseTest.java:36)
-	at stepDefinition.ProductSearchPage.user_navigated_to_flipkart_landing_page(ProductSearchPage.java:23)
-	at ✽.User navigated to Flipkart landing page(file:///C:/Users/Dell/eclipse-workspace/CucumberAutomationLearning/src/test/java/features/searchProductOnly.feature:5)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">cucumberOption.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search product In both Homepage and offerpage&quot;</td><td>&quot;Search and place order for product&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 122
-Current browser version is 121.0.6167.187 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe 
-Host info: host: &apos;PUNITRANJAN2105&apos;, ip: &apos;192.168.152.195&apos;
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
-	at utils.BaseTest.webdriverManager(BaseTest.java:36)
-	at stepDefinition.FlipCartSearchPageStepDefinition.UserisonFlipkartlandingpage(FlipCartSearchPageStepDefinition.java:23)
-	at ✽.User is on Flipkart landing page(file:///C:/Users/Dell/eclipse-workspace/CucumberAutomationLearning/src/test/java/features/searchProduct.feature:5)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">cucumberOption.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search product In both Homepage and offerpage&quot;</td><td>&quot;Search and place order for product&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">cucumberOption.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search product In both Homepage&quot;</td><td>&quot;Search and place order for productonly&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
