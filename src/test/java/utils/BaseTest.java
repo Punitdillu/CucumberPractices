@@ -31,7 +31,8 @@ public class BaseTest {
 		if (driver == null) {
 		if(browser.equalsIgnoreCase("chrome"))
 		{
-			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\eclipse-workspace\\CucumberAutomationLearning\\src\\test\\resources\\chromedriver.exe");
+			//WebDriverManager.chromedriver().setup();
 		     driver = new ChromeDriver();
 		     
 		}
