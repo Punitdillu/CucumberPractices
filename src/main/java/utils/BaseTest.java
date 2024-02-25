@@ -22,11 +22,11 @@ public class BaseTest {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\global.properties");
 		Properties prop = new Properties();
 		prop.load(fis);
-		String browser=gu.returnDataFromPropertyFile("browser");
+		String browser_Properties=gu.returnDataFromPropertyFile("browser");
 		String url=gu.returnDataFromPropertyFile("url");
-
+		String browser_Maven=System.getProperty("browser");
 		
-
+		String browser=browser_Maven!=null ? browser_Maven:browser_Properties;
 		  
 		if (driver == null) {
 		if(browser.equalsIgnoreCase("chrome"))
