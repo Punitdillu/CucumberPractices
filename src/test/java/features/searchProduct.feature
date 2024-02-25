@@ -11,6 +11,7 @@ Examples:
 | Product |
 | Apple iPhone 12 (Blue, 128 GB) |
 | Apple iPhone 12 (Blue, 128 GB) |
+| Apple iPhone 12 (Blue, 128 GB) |
 
 
 
