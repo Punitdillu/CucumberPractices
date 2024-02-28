@@ -1,86 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-25T08:51:37 IST" name="Default suite" finished-at="2024-02-25T08:52:38 IST" duration-ms="61003">
+  <suite started-at="2024-02-28T07:43:43 IST" name="Default suite" finished-at="2024-02-28T07:44:58 IST" duration-ms="74069">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-02-25T08:51:37 IST" name="Default test" finished-at="2024-02-25T08:52:38 IST" duration-ms="61003">
+    <test started-at="2024-02-28T07:43:43 IST" name="Default test" finished-at="2024-02-28T07:44:58 IST" duration-ms="74069">
       <class name="cucumberOption.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-25T08:51:38 IST" name="setUpClass" finished-at="2024-02-25T08:51:39 IST" duration-ms="1748" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-28T07:43:44 IST" name="setUpClass" finished-at="2024-02-28T07:43:45 IST" duration-ms="1783" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3d5790ea]]>
+                <![CDATA[org.testng.TestRunner@7a7cc52c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-25T08:51:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-25T08:52:16 IST" duration-ms="36515" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search product In both Homepage and offerpage"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search and place order for product"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: stale element not found
-  (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [46ff3db4c3e535134fd741dff2be362f, sendKeysToElement {id=f.57052ADDE27EAA87F03E07901CA141E7.d.00FC1645375B154EDBEFC50FDE4A025C.e.32, value=[Ljava.lang.CharSequence;@6ea30b58}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49434}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49434/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (46ff3db4c3e535134fd741dff2be362f)] -> xpath: //input[@title='Search for Products, Brands and More']]
-Session ID: 46ff3db4c3e535134fd741dff2be362f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.18.0', revision: 'b6bf9de7cc*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [46ff3db4c3e535134fd741dff2be362f, sendKeysToElement {id=f.57052ADDE27EAA87F03E07901CA141E7.d.00FC1645375B154EDBEFC50FDE4A025C.e.32, value=[Ljava.lang.CharSequence;@6ea30b58}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49434}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49434/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (46ff3db4c3e535134fd741dff2be362f)] -> xpath: //input[@title='Search for Products, Brands and More']]
-Session ID: 46ff3db4c3e535134fd741dff2be362f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-at objectRepository.FlipcartHomePage.searchForProduct(FlipcartHomePage.java:17)
-at stepDefinition.FlipCartSearchPageStepDefinition.user_search_with_short_name_and_extract_actual_name_of_product(FlipCartSearchPageStepDefinition.java:32)
-at ✽.User search with shortName Apple iPhone 12 (Blue, 128 GB) and extract actual name of product(file:///C:/Users/Dell/eclipse-workspace/CucumberAutomationLearning/src/test/java/features/searchProduct.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-25T08:51:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-25T08:52:38 IST" duration-ms="58406" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-28T07:43:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-28T07:44:55 IST" duration-ms="69950" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,7 +37,23 @@ at ✽.User search with shortName Apple iPhone 12 (Blue, 128 GB) and extract act
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-25T08:51:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-25T08:52:27 IST" duration-ms="47430" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-28T07:43:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-28T07:44:56 IST" duration-ms="71079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search product In both Homepage and offerpage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search and place order for product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-28T07:43:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-28T07:44:46 IST" duration-ms="61106" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,7 +69,7 @@ at ✽.User search with shortName Apple iPhone 12 (Blue, 128 GB) and extract act
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-25T08:51:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-25T08:52:35 IST" duration-ms="55973" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-28T07:43:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-28T07:44:57 IST" duration-ms="71236" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,7 +85,7 @@ at ✽.User search with shortName Apple iPhone 12 (Blue, 128 GB) and extract act
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-25T08:52:38 IST" name="tearDownClass" finished-at="2024-02-25T08:52:38 IST" duration-ms="721" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOption.TestRunner@4b520ea8]" started-at="2024-02-28T07:44:57 IST" name="tearDownClass" finished-at="2024-02-28T07:44:58 IST" duration-ms="928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Feb 25 08:51:37 IST 2024</td>
+<td>Started on:</td><td>Wed Feb 28 07:43:43 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>61 seconds (61003 ms)</td>
+<tr><td>Total time:</td><td>74 seconds (74069 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,73 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='cucumberOption.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search product In both Homepage and offerpage", "Search and place order for product"</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [46ff3db4c3e535134fd741dff2be362f, sendKeysToElement {id=f.57052ADDE27EAA87F03E07901CA141E7.d.00FC1645375B154EDBEFC50FDE4A025C.e.32, value=[Ljava.lang.CharSequence;@6ea30b58}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49434}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49434/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (46ff3db4c3e535134fd741dff2be362f)] -&gt; xpath: //input[@title=&apos;Search for Products, Brands and More&apos;]]
-Session ID: 46ff3db4c3e535134fd741dff2be362f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at objectRepository.FlipcartHomePage.searchForProduct(FlipcartHomePage.java:17)
-	at stepDefinition.FlipCartSearchPageStepDefinition.user_search_with_short_name_and_extract_actual_name_of_product(FlipCartSearchPageStepDefinition.java:32)
-	at ✽.User search with shortName Apple iPhone 12 (Blue, 128 GB) and extract actual name of product(file:///C:/Users/Dell/eclipse-workspace/CucumberAutomationLearning/src/test/java/features/searchProduct.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace934688301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace934688301'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.22&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [46ff3db4c3e535134fd741dff2be362f, sendKeysToElement {id=f.57052ADDE27EAA87F03E07901CA141E7.d.00FC1645375B154EDBEFC50FDE4A025C.e.32, value=[Ljava.lang.CharSequence;@6ea30b58}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49434}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49434/devtoo..., se:cdpVersion: 122.0.6261.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (46ff3db4c3e535134fd741dff2be362f)] -&gt; xpath: //input[@title=&apos;Search for Products, Brands and More&apos;]]
-Session ID: 46ff3db4c3e535134fd741dff2be362f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at objectRepository.FlipcartHomePage.searchForProduct(FlipcartHomePage.java:17)
-	at stepDefinition.FlipCartSearchPageStepDefinition.user_search_with_short_name_and_extract_actual_name_of_product(FlipCartSearchPageStepDefinition.java:32)
-	at ✽.User search with shortName Apple iPhone 12 (Blue, 128 GB) and extract actual name of product(file:///C:/Users/Dell/eclipse-workspace/CucumberAutomationLearning/src/test/java/features/searchProduct.feature:6)
-</pre></div></td>
-<td>36</td>
-<td>cucumberOption.TestRunner@4b520ea8</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -145,17 +78,22 @@ Session ID: 46ff3db4c3e535134fd741dff2be362f
 <tr>
 <td title='cucumberOption.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search product In both Homepage and offerpage", "Search and place order for product"</td>
 <td></td>
-<td>55</td>
-<td>cucumberOption.TestRunner@4b520ea8</td></tr>
-<tr>
-<td title='cucumberOption.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search product In both Homepage", "Search and place order for productonly"</td>
-<td></td>
-<td>47</td>
+<td>69</td>
 <td>cucumberOption.TestRunner@4b520ea8</td></tr>
 <tr>
 <td title='cucumberOption.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search product In both Homepage and offerpage", "Search and place order for product"</td>
 <td></td>
-<td>58</td>
+<td>71</td>
+<td>cucumberOption.TestRunner@4b520ea8</td></tr>
+<tr>
+<td title='cucumberOption.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search product In both Homepage", "Search and place order for productonly"</td>
+<td></td>
+<td>61</td>
+<td>cucumberOption.TestRunner@4b520ea8</td></tr>
+<tr>
+<td title='cucumberOption.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search product In both Homepage and offerpage", "Search and place order for product"</td>
+<td></td>
+<td>71</td>
 <td>cucumberOption.TestRunner@4b520ea8</td></tr>
 </table><p>
 </body>
