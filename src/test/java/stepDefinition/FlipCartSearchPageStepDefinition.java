@@ -26,11 +26,11 @@ public class FlipCartSearchPageStepDefinition extends BaseTest{
 	}
 
 	@When("^User search with shortName (.+) and extract actual name of product$")
-	public void user_search_with_short_name_and_extract_actual_name_of_product(String producName)
+	public void user_search_with_short_name_and_extract_actual_name_of_product(String productName)
 			throws InterruptedException {
 
-		fHome.searchForProduct(testContextSetup.driver,producName);
-		fHome.selectResult(testContextSetup.driver,producName);
+		fHome.searchForProduct(testContextSetup.driver,productName);
+		fHome.selectResult(testContextSetup.driver,productName);
 	}
 
 

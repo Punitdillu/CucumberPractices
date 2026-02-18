@@ -10,8 +10,8 @@ And Validate product <Product> added in cart or Not
 Examples:
 | Product |
 | Apple iPhone 12 (Blue, 128 GB) |
-| Apple iPhone 12 (Blue, 128 GB) |
-| Apple iPhone 12 (Blue, 128 GB) |
+| Samsung Galaxy S24 Ultra 5G (Titanium Violet, 256 GB) |
+| Samsung Galaxy S24 Ultra 5G (Titanium Gray, 256 GB) |
 
 
 
