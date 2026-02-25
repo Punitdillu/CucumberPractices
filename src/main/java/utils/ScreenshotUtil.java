@@ -31,7 +31,6 @@ public class ScreenshotUtil {
 //        String screenshotDir = System.getProperty("user.dir")
 //                + "/test-output/SparkReport/screenshots/";
 
-
         File dir = new File(screenshotDir);
         if (!dir.exists()) {
             dir.mkdirs();
