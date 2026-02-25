@@ -7,14 +7,15 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		features = "src/test/resources/features",
-		glue = {"stepDefinition"},
+		glue = {"stepDefinition", "utils", "hook"},
 		monochrome = true,
-		tags = "@PositiveLogin or @InvalidPassword or @InvalidUsername or @EmptyCredentials or @EmptyPassword " +
-				"or @EmptyUsername",
+//		tags = "@PositiveLogin or @InvalidPassword or @InvalidUsername or @EmptyCredentials or @EmptyPassword " +
+//				"or @EmptyUsername or @PositiveLeadCreation",
+		tags = "@PositiveLeadCreation",
 		plugin = {
 				"html:target/cucumber.html",
 				"json:target/cucumber.json",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+				//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failed_scenarios.txt"
 		}
 )

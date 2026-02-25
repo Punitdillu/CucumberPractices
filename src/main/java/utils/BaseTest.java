@@ -34,6 +34,7 @@ public class BaseTest {
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\eclipse-workspace\\CucumberAutomationLearning\\src\\test\\resources\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			DriverFactory.setDriver(driver);
 		     
 		}
 		
@@ -41,12 +42,14 @@ public class BaseTest {
 		{
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+			DriverFactory.setDriver(driver);
 		}
 		
 		else if(browser.equalsIgnoreCase("edge"))
 		{
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+			DriverFactory.setDriver(driver);
 		}
 		}
 		driver.manage().window().maximize();
