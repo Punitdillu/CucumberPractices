@@ -2,9 +2,7 @@ package utils;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import org.openqa.selenium.WebDriver;
 
 import static utils.GenericUtils.getCurrentDateTime;
 import static utils.ScreenshotUtil.activeReportPath;
@@ -12,7 +10,7 @@ import static utils.ScreenshotUtil.activeReportPath;
 public class ExtentManager {
 
     public static ExtentReports extent;
-    private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+    private static final ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
 
     public static ExtentReports getReportInstance() {

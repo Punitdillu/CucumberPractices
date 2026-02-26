@@ -45,4 +45,8 @@ public class ExtentLogger {
             getTest().log(Status.FAIL, "Logging Error: " + e.getMessage());
         }
     }
+
+    public static void warning(String s, WebDriver driver) {
+
+    }
 }

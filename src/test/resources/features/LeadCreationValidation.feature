@@ -12,7 +12,7 @@ Feature: LeadCreation Functionality
   @PositiveLeadCreation
   Scenario: Successful lead creation with valid details
     When User enters valid username "admin" password "root" and logs in
-    When User enters valid lead details
+    When User enters valid lead details from excel "Lead_01"
     And User clicks on Save button
     Then Lead should be created successfully
     And Confirmation message "Lead created successfully" should be displayed
