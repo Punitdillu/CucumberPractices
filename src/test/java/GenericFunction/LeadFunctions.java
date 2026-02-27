@@ -57,7 +57,7 @@ public class LeadFunctions {
                 // City and other address details from Excel
                 driver.findElement(leadPage.city).sendKeys(testData.get("City"));
 
-
+                gu.scrollUntilElement(driver, driver.findElement(leadPage.emailOptOut));
                 // Checkbox handling
                 if (!driver.findElement(leadPage.emailOptOut).isSelected()) {
                         driver.findElement(leadPage.emailOptOut).click();

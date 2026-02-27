@@ -17,8 +17,8 @@ public class ExtentManager {
 
         if (activeReportPath == null) {
             // This MUST match the folder created by your extent.properties
-            //activeReportPath = "test-output/SparkReport " + getCurrentDateTime();
-            activeReportPath = "test-output/SparkReport_" ;
+            activeReportPath = "test-output/SparkReport_" + getCurrentDateTime();
+            //activeReportPath = "test-output/SparkReport_" ;
         }
 
         if (extent == null) {
