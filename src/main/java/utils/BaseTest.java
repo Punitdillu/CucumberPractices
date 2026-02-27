@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -27,13 +28,15 @@ public class BaseTest {
 		String browser_Maven=System.getProperty("browser");
 		
 		String browser=browser_Maven!=null ? browser_Maven:browser_Properties;
-		  
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--window-size=1920,1080"); // Force a large resolution
+		options.addArguments("--start-maximized");
 		if (driver == null) {
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\eclipse-workspace\\CucumberAutomationLearning\\src\\test\\resources\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 			DriverFactory.setDriver(driver);
 		     
 		}
