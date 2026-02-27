@@ -46,7 +46,10 @@ public class LeadFunctions {
 
                 driver.findElement(leadPage.primaryPhone).sendKeys(testData.get("PrimaryPhone"));
                 driver.findElement(leadPage.mobilePhone).sendKeys(testData.get("MobilePhone"));
-
+                // Checkbox handling
+                if (!driver.findElement(leadPage.emailOptOut).isSelected()) {
+                        driver.findElement(leadPage.emailOptOut).click();
+                }
                 driver.findElement(leadPage.designation).sendKeys(testData.get("Designation"));
 
                 gu.selectByVisibleText(driver, leadPage.leadSource, "Employee"); // Can also be moved to Excel
@@ -57,11 +60,7 @@ public class LeadFunctions {
                 // City and other address details from Excel
                 driver.findElement(leadPage.city).sendKeys(testData.get("City"));
 
-                gu.scrollUntilElement(driver, driver.findElement(leadPage.emailOptOut));
-                // Checkbox handling
-                if (!driver.findElement(leadPage.emailOptOut).isSelected()) {
-                        driver.findElement(leadPage.emailOptOut).click();
-                }
+
 
                 driver.findElement(leadPage.savebtn).click();
                 ExtentLogger.pass("Lead created successfully for: " + testData.get("FirstName"), driver);
