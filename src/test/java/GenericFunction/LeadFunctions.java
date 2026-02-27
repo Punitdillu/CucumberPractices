@@ -47,9 +47,9 @@ public class LeadFunctions {
                 driver.findElement(leadPage.primaryPhone).sendKeys(testData.get("PrimaryPhone"));
                 driver.findElement(leadPage.mobilePhone).sendKeys(testData.get("MobilePhone"));
                 // Checkbox handling
-                if (!driver.findElement(leadPage.emailOptOut).isSelected()) {
-                        driver.findElement(leadPage.emailOptOut).click();
-                }
+//                if (!driver.findElement(leadPage.emailOptOut).isSelected()) {
+//                        driver.findElement(leadPage.emailOptOut).click();
+//                }
                 driver.findElement(leadPage.designation).sendKeys(testData.get("Designation"));
 
                 gu.selectByVisibleText(driver, leadPage.leadSource, "Employee"); // Can also be moved to Excel
