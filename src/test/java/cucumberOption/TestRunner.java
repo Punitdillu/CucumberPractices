@@ -9,9 +9,8 @@ import io.cucumber.testng.CucumberOptions;
 		features = "src/test/resources/features",
 		glue = {"stepDefinition", "utils", "hook"},
 		monochrome = true,
-//		tags = "@PositiveLogin or @InvalidPassword or @InvalidUsername or @EmptyCredentials or @EmptyPassword " +
-//				"or @EmptyUsername or @PositiveLeadCreation",
-		tags = "@PositiveLeadCreation",
+		tags = "@PositiveLogin or @InvalidPassword or @InvalidUsername or @EmptyCredentials or @EmptyPassword " +
+				"or @EmptyUsername or @PositiveLeadCreation",
 		plugin = {
 				"html:target/cucumber.html",
 				"json:target/cucumber.json",

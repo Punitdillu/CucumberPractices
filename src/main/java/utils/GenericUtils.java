@@ -99,7 +99,7 @@ public class GenericUtils  {
 	public void smoothScroll(WebDriver driver)
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy({top:600, behavior:'smooth'});");
+		js.executeScript("window.scrollBy({top:50, behavior:'smooth'});");
 	}
 
 	public void scrollUntilElement(WebDriver driver, WebElement element)

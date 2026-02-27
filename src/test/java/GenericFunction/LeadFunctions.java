@@ -1,83 +1,69 @@
 package GenericFunction;
 
-import com.aventstack.extentreports.Status;
 import objectRepository.HomePageObjects;
 import objectRepository.LeadPage;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import utils.ExtentLogger;
 import utils.GenericUtils;
+import java.util.Map; // Added for data-driven map
 
 public class LeadFunctions {
 
-    HomePageObjects hp = new HomePageObjects();
-    GenericUtils gu = new GenericUtils();
-    LeadPage leadPage = new LeadPage();
+        HomePageObjects hp = new HomePageObjects();
+        GenericUtils gu = new GenericUtils();
+        LeadPage leadPage = new LeadPage();
 
-    public void createLead(WebDriver driver) {
+        /**
+         * @param testData A map containing column headers as keys and excel cell values as values
+         */
 
-            // ===== Navigate to Lead Creation Page =====
-            gu.WebdriverWaitElementTobeClickable(driver, 20, hp.ThreeLines);
-            driver.findElement(hp.ThreeLines).click();
-            ExtentLogger.pass( "Clicked on Three Lines Menu", driver);
-            gu.WebdriverWaitElementTobeClickable(driver, 20, hp.MarketingBtn);
-            driver.findElement(hp.MarketingBtn).click();
-            ExtentLogger.pass("Clicked on Marketing Button", driver);
-            gu.WebdriverWaitElementTobeClickable(driver, 20, hp.LeadButton);
-            driver.findElement(hp.LeadButton).click();
+        public void createLead(WebDriver driver, Map<String, String> testData) {
 
-            gu.WebdriverWaitElementTobeClickable(driver, 20, leadPage.AddbtnLeadPage);
-            driver.findElement(leadPage.AddbtnLeadPage).click();
+                // ===== Navigate to Lead Creation Page =====
+                gu.WebdriverWaitElementTobeClickable(driver, 20, hp.ThreeLines);
+                driver.findElement(hp.ThreeLines).click();
+                ExtentLogger.pass("Clicked on Three Lines Menu", driver);
 
+                gu.WebdriverWaitElementTobeClickable(driver, 20, hp.MarketingBtn);
+                driver.findElement(hp.MarketingBtn).click();
+                ExtentLogger.pass("Clicked on Marketing Button", driver);
 
-            // ===== Fill Lead Form =====
+                gu.WebdriverWaitElementTobeClickable(driver, 20, hp.LeadButton);
+                driver.findElement(hp.LeadButton).click();
 
-            gu.selectByVisibleText(driver, leadPage.salutation, "Mr.");
+                gu.WebdriverWaitElementTobeClickable(driver, 20, leadPage.AddbtnLeadPage);
+                driver.findElement(leadPage.AddbtnLeadPage).click();
 
-            driver.findElement(leadPage.firstName).sendKeys("Punit");
-            driver.findElement(leadPage.lastName).sendKeys("Ranjan");
-            driver.findElement(leadPage.company).sendKeys("ABC Pvt Ltd");
+                // ===== Fill Lead Form Using Excel Data =====
 
-            driver.findElement(leadPage.primaryPhone).sendKeys("9876543210");
-            driver.findElement(leadPage.mobilePhone).sendKeys("9123456780");
+                // Use testData.get("ColumnHeader") to fetch values
+                gu.selectByVisibleText(driver, leadPage.salutation, testData.get("Salutation"));
 
-            driver.findElement(leadPage.designation).sendKeys("QA Engineer");
-            driver.findElement(leadPage.fax).sendKeys("123456");
+                driver.findElement(leadPage.firstName).sendKeys(testData.get("FirstName"));
+                driver.findElement(leadPage.lastName).sendKeys(testData.get("LastName"));
+                driver.findElement(leadPage.company).sendKeys(testData.get("Company"));
 
-            gu.selectByVisibleText(driver, leadPage.leadSource, "Employee");
-            driver.findElement(leadPage.email).sendKeys("punit@test.com");
+                driver.findElement(leadPage.primaryPhone).sendKeys(testData.get("PrimaryPhone"));
+                driver.findElement(leadPage.mobilePhone).sendKeys(testData.get("MobilePhone"));
 
-            gu.selectByVisibleText(driver, leadPage.industry, "Technology");
+                driver.findElement(leadPage.designation).sendKeys(testData.get("Designation"));
 
-            driver.findElement(leadPage.website).sendKeys("https://example.com");
-            driver.findElement(leadPage.annualRevenue).sendKeys("500000");
+                gu.selectByVisibleText(driver, leadPage.leadSource, "Employee"); // Can also be moved to Excel
+                driver.findElement(leadPage.email).sendKeys(testData.get("Email"));
 
+                gu.selectByVisibleText(driver, leadPage.industry, testData.get("Industry"));
 
-            driver.findElement(leadPage.noOfEmployees).sendKeys("100");
-
-            gu.smoothScroll(driver);
-            driver.findElement(leadPage.secondaryEmail).sendKeys("punit.secondary@test.com");
-
-            gu.selectByVisibleText(driver, leadPage.assignedTo, "Administrator");
-
-            // Checkbox handling
-            if (!driver.findElement(leadPage.emailOptOut).isSelected()) {
-                driver.findElement(leadPage.emailOptOut).click();
-            }
-
-            // Address Details
-            driver.findElement(leadPage.street).sendKeys("Main Road");
-            driver.findElement(leadPage.poBox).sendKeys("123");
-            driver.findElement(leadPage.postalCode).sendKeys("800001");
-            driver.findElement(leadPage.city).sendKeys("Patna");
-            driver.findElement(leadPage.state).sendKeys("Bihar");
-            driver.findElement(leadPage.country).sendKeys("India");
-
-            // Description
-            driver.findElement(leadPage.description)
-                    .sendKeys("Lead created using Selenium Automation Framework");
-
-        driver.findElement(leadPage.savebtn).click();
+                // City and other address details from Excel
+                driver.findElement(leadPage.city).sendKeys(testData.get("City"));
 
 
-    }
+                // Checkbox handling
+                if (!driver.findElement(leadPage.emailOptOut).isSelected()) {
+                        driver.findElement(leadPage.emailOptOut).click();
+                }
+
+                driver.findElement(leadPage.savebtn).click();
+                ExtentLogger.pass("Lead created successfully for: " + testData.get("FirstName"), driver);
+        }
 }
