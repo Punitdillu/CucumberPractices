@@ -21,8 +21,8 @@ public class ScreenshotUtil {
 
         if (activeReportPath == null) {
             // This MUST match the folder created by your extent.properties
-            //ctiveReportPath = "test-output/SparkReport_" + getCurrentDateTime();
-            activeReportPath = "test-output/SparkReport";
+            activeReportPath = "test-output/SparkReport_" + getCurrentDateTime();
+            //activeReportPath = "test-output/SparkReport";
         }
 
         // Path: test-output/SparkReport {Timestamp}/screenshots/
